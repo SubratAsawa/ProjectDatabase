@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <script>
+      var messages = {{ messages | safe }};
+      for (var i=0; i<messages.length; i++) {
+        alert(messages[i]);
+      }
+    </script>
+  {% endif %}
+{% endwith %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project">
+    <meta name="author" content="Project">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+  
+
+    
+   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min_Front.css') }}" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Project Databse.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}">
+
+  </head>
+
+  <body>
+
+    <!-- Preloader Start  -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- Preloader End  -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{{ url_for('home') }}"><h2>Project <em>Database</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('home') }}">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="functional-buttons">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('login') }}">Log in</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('signUp') }}">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="header-text caption">
+              <h2>Project Database</h2>
+              <div id="search-section">
+              	<form id="suggestion_form" name="gs" method="get" action="#">
+                <div class="searchText">
+                  
+                  
+                  <ul>
+                    
+                  </ul>
+                </div>
+                    
+                 </form>
+               <div class="advSearch_chkbox">
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <!-- Services Starts Here -->
+    <div class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <span>      </span>
+              <h2>Project Fields</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              
+              <h4>IOT</h4>
+              <p>The Internet of things describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+             
+              <h4>Cloud Computing</h4>
+              <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="service-item">
+              
+              <h4>Machine Learning</h4>
+              <p>Machine learning is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Ends Here -->
+
+
+                <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>About Us</h2>
+              </div>
+              <p>we are a company whose goal is to provide solutions for students all over the world.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2></h2>
+              </div>
+              <ul class="footer-list">
+               
+              </ul>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2></h2>
+              </div>
+              <ul class="footer-list">
+                
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>More Information</h2>
+              </div>
+              <ul class="footer-list">
+                <li>Phone: <a href="#">010-020-0560</a></li>
+                <li>Email: <a href="#">mail@company.com</a></li>
+                <li>Support: <a href="#">support@company.com</a></li>
+                <li>Website: <a href="#">www.company.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="sub-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min_Front.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min_Front.js') }}"></script>
+
+    
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/owl.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/accordions.js') }}"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; 
+      function clearField(t){                   
+      if(! cleared[t.id]){                      
+          cleared[t.id] = 1;  
+          t.value='';         
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
